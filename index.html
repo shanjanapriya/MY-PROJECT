@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./library/font awesome/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="navbar bg-[#e76f51]">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">
+        <img src="./images/logo.png" class="md:h-[50px]" alt="">
+      <h1 class="text-blue-700 font-bold md:text[40px]">SHOPSY</h1>
+      </a>
+    </div>
+    <div class="flex-none gap-2">
+      <div class="form-control">
+        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+      </div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+         
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+     <!-- Header Section -->
+      <section>
+     <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li>
+                <a>Shop</a>
+                
+              </li>
+              <li><a>News</a></li>
+            </ul>
+          </div>
+          <div>
+          <a class="text-center text-[40px] text-red h-[150px] w-[150px] mt-16 font-bold">
+            <img src="./images/Label.png" class=" mr-[30px]" alt="">
+          </a>
+          </div>
+        </div>
+        
+        <div class="navbar-end hidden text-[50px] font-bold text-black lg:flex text-center">
+          <ul class=" menu menu-horizontal px-5 text-[20px] text-center">
+            <li><a>Home</a></li>
+            <li><a>Kids Wear</a></li>
+            <li><a>Mens Wear</a></li>
+            <li><a>Electronics</a></li>
+            <li><a>Trending Items</a></li>
+          </ul>
+        </div>
+  
+       
+      </div>
+
+      </section>
+
+      <!-- Hero Area -->
+
+     <section class="md:w-[1440px] md:mx-auto">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full p-[104px] box-border bg-[#f265411a] justify-center">
+            <div class="flex flex-wrap md:flex-nowrap gap-3 justify-center">
+            <div class="md:w-[475px]">
+              <h1 class="md:text-[60px] font-bold leading-[75px]">50% off on all <br> Product Sale</h1>
+              <p class="text-base mb-5">consectetur adipiscing elit, sed do eiusmod lempor incididunt ut labore et dolore magna aliqua.
+              </p>
+                <button class="btn text-white bg-[#E76f51]">Order Now</button>
+            </div>
+            <img src="./images/slide 1.jpg" class="w-[400px]" alt="" data-aos="flip-left">
+            </div>
+    
+            <div class="absolute left-5 right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+    
+          <div id="slide2" class="carousel-item relative w-full p-[104px] box-border bg-[#E76F511A] justify-center">
+            <div class="flex gap-3 justify-center">
+            <div class="md:w-[475px]">
+              <h1 class="md:text-[60px] font-bold leading-[75px]">30% off on all <br>Women's Wear</h1>
+              <p class="text-base mb-5">Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+                <button class="btn text-white bg-[#E76f51]">Order Now</button>
+            </div>
+            <img src="./images/slide 2.jpg" class="w-[400px]" alt="">
+            </div>
+    
+            <div class="absolute left-5 right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full p-[104px] box-border bg-[#E76F511A] justify-center">
+            <div class="flex gap-3 justify-center">
+            <div class="md:w-[475px]">
+              <h1 class="md:text-[60px] font-bold leading-[75px]">Upto 40% off on <br> all Men's Wear</h1>
+              <p class="text-base mb-5">Lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn text-white bg-[#E76f51]">Order Now</button>
+            </div>
+            <img src="./images/slide 3.jpg" class="w-[400px]" alt="">
+            </div>
+    
+            <div class="absolute left-5 right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+         </div>
+        </section>
+
+        <!-- Welcome to page -->
+
+        <section class="md:mt-10 bg-[#e76f51] md:h-[300px]">
+          <div class="text-white text-center p-[80px]">
+            <h3 class="font-bold text-[40px]"> Welcome To The SHOPSY Market</h3>
+            <p class="font-bold mt-5" data-aos="fade-right">SHOPSY Market is a window for Shopsy people to the world. We benefit the rural artisan communities through this online,
+              small-producers market. <br> Thousands of women from the deserts of La Guajira,weaving the patterns they dream, crafting the 
+              finest Colombian-woven bags. <br>
+              Each piece has a story to tell,and now,you can be a part of it!
+              
+            </p>
+          </div>
+        </section>
+
+
+        <!-- Top seeling Product -->
+       
+            <section class="md:h-[500px] md:mt-10 bg-white">
+              <div class="text-center ">
+                <h3 class="md:text-[25px] text-orange-600 text-base">Top Selling Products for you</h3>
+                <h1 class="font-bold text-[40px]">Top Selling Products</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur elit.Perspiciats delectus architecto error nesciunt.</p>
+                
+              </div>
+              <div class="row mt-5 flex flex-wrap md:flex-nowrap mr-10 gap-[80px]">
+                <div class="col-12 col-md-3">
+                  <img class="object-fit-cover img-fluid w-50 mx-4" src="./images/top sel 1.avif" alt="">
+                  <div class="mt-3">
+                    <h5 class="fs-5 fw-bold font-bold" style="text-align: center;"> Women Ethnic</h5>
+                    <p class="fs-6" style="text-align: center;">White</p>
+                    
+                  </div>
+                </div>
+    
+                <div class="col-12 col-md-3">
+                  <img class="object-fit-cover img-fluid w-50 mx-4" src="./images/top sel 2.avif" alt="">
+                  <div class="mt-3">
+                    <h5 class="fs-5 fw-bold font-bold" style="text-align: center;">Women Western</h5>
+                    <p class="fs-6" style="text-align: center;">Black</p>
+                  </div>
+                </div>
+    
+                <div class="col-12 col-md-3">
+                  <img class="object-fit-cover img-fluid w-50 mx-4" src="./images/top sel 3.avif" alt="">
+                  <div class="mt-3">
+                    <h5 class="fs-5 fw-bold font-bold" style="text-align: center;">Goggles</h5>
+                    <p class="fs-6" style="text-align: center;">Brown</p>
+                  </div>
+                </div>
+    
+                <div class="col-12 col-md-3">
+                  <img class="object-fit-cover img-fluid w-50 mx-4" src="./images/top sel 4.avif" alt="">
+                  <div class="mt-3">
+                    <h5 class="fs-5 fw-bold font-bold" style="text-align: center;">Fashin T-Shirt</h5>
+                    <p class="fs-6" style="text-align: center;">Black</p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                  <img class="object-fit-cover img-fluid w-50 mx-4" src="./images/top sel 5.avif" alt="">
+                  <div class="mt-3">
+                    <h5 class="fs-5 fw-bold font-bold" style="text-align: center;">Printed T-Shirt</h5>
+                    <p class="fs-6" style="text-align: center;">White</p>
+                  </div>
+                </div>
+                </div>
+                <div class="text-center mt-10">
+                  <button class="btn text-white bg-[#E76f51] text-center" data-aos="flip-left">View All Products</button>
+                </div>
+             </section>
+
+
+             <!-- Top Rated Products -->
+
+             <section class=" md:h-[800px] md:mt-10 bg-purple-50">
+              <div class="text-center ">
+                <h3 class="md:text-[25px] text-orange-600 text-base">Trending Products</h3>
+                <h1 class="font-bold text-[30px]">Top Rated Products</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit. <br>Perspiciats delectus architecto error nesciunt.</p>
+              </div>
+
+              <div>
+                
+                <div class="flex justify-center">
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-9">
+        
+                    <div class="card bg-base-90 w-96 shadow-2xl">
+                      <figure>
+                        <img src="./images/t-shirt.jpg" alt="">
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">Casual Wear</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                        <div class="card-actions justify-start">
+                          <button class="btn bg-[#E76F51] text-[white]">Order Now</button>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="card bg-base-90 w-96 shadow-2xl">
+                      <figure>
+                        <img src="./images/t-shirt 1.jpg" alt="">
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">Simple T-shirt</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                        <div class="card-actions justify-start">
+                          <button class="btn bg-[white] text-[#E76F51] border-[#E76f51]">Order Now</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                    <div class="card bg-base-90 w-96 shadow-2xl">
+                      <figure>
+                        <img src="./images/t-shirt 4.avif" alt="">
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">Printed T-shirt</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                        <div class="card-actions justify-start">
+                          <button class="btn bg-[white] text-[#E76F51] border-[#E76f51]">Order Now</button>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+               </div>
+
+             </section>
+
+             <!-- Winter Sale -->
+
+             <section class="bg-gradient-to-t to-blue-600 mt-[40px] bg-red-50">
+              <div class="flex flex-wrap md:flex-nowrap justify-center gap-28">
+
+                <div>
+                  <img src="./images/shopping.avif" alt="">
+                </div>
+                <div class=" p-[30px]"data-aos="zoom-in">
+                
+                  <h1 class="text-[35px] leading-[55px] md:w-[465px] text-black-700  mt-7">Winter Sale Up To 50% Off</h1>
+                  <p class="md:w-[409px] leading-[35px] mt-4"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eligendi iste, perferendis ipsum beatae nostrum ea autem perspiciatis eaque expedita facere.</p>
+                    
+                    <h1 class="text-xl w-62 h-34 gap-20"><i class="fa fa-user-secret" aria-hidden="true"></i>Quality Product</h1>
+                    <h1 class="text-xl w-62 h-34"><i class="fa fa-lastfm-square" aria-hidden="true"></i>Fast Delivery</h1>
+                    <h1 class="text-xl w-62 h-34"> <i class="fa fa-edge" aria-hidden="true"></i>Easy Payment method</h1>
+                    <h1 class="text-xl w-62 h-34"><i class="fa fa-get-pocket" aria-hidden="true"></i>Get Offer</h1>
+
+                </div>
+              </div>
+
+             </section>
+             
+             <!--Get Notified  -->
+
+             <section class="bg-primary mt-5 p-5 text-center">
+              <div class="row justify-center item-center">
+                <div class="col-12 col-md-8 text-white font-bold text-[30px]">
+                  <h1 class="fw-bold fst-italic">Get Notified About New Products</h1>
+                  </div>
+                  <br>
+                 <div class="group"> 
+                  <input type="text" placeholder="Enter your email" class=" md:w-[400px] sm:w-[400px] group-hover:w-[300px] transition-all duration-500
+                 border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-orange-400">
+              </div>
+              </div>
+             </section>
+
+             <!-- New products -->
+
+             <section class="mt-10">
+              <div>
+                <h1 class="font-bold text-[50px]  text-orange-600">New Products</h1>
+                <div>
+
+                </div>
+
+
+                <div class="flex">
+                   <div class="flex flex-wrap md:flex-nowrap justify-around gap-[35px] mt-[35px]">
+                  <div class="shadow-xl p-[40px]">
+                      <img src="./images/watches.jpeg" alt="">
+                      <h1 class="text-[25px] text-blue-950">WATCH</h1>
+                      <p class="leading-[25px] md:w-[180px]"> Fastrack Smart <br> Active Watch</p>
+                      <p class="text-red-600">$55.00</p>
+                  </div>
+  
+                  <div class="shadow-xl p-[40px]">
+                      <img src="./images/skart.jpeg" alt="">
+                      <h1 class="text-[25px] text-blue-950">SKIRT</h1>
+                      <p class="leading-[25px] md:w-[180px]">Georgette long <br> Flare skirt</p>
+                      <p class="text-red-600">$200.00</p>
+                  </div>
+  
+                 </div>
+                  
+  
+                 <div class="flex flex-wrap md:flex-nowrap justify-around gap-[35px] mt-[35px]">
+                  <div class="shadow-xl p-[40px]">
+                      <img src="./images/shoes.jpeg" alt="">
+                      <h1 class="text-[25px] text-blue-950">SHOES</h1>
+                      <p class="leading-[25px] md:w-[180px]">Women's Party <br> Wear Shoes</p>
+                      <p class="text-red-600">$170.00</p>
+                  </div>
+  
+                  <div class="shadow-xl p-[40px]">
+                      <img src="./images/shirt.jpeg" alt="">
+                      <h1 class="text-[25px] text-blue-950">SHIRT</h1>
+                      <p class="leading-[25px] md:w-[180px]">Pure Garment <br>Dyed Shirt</p>
+                      <p class="text-red-600">$366.00</p>
+                  </div>
+
+                  <div class="shadow-xl p-[40px]">
+                    <img src="./images/juellary.jpeg" alt="">
+                    <h1 class="text-[25px] text-blue-950">JEWELLERY</h1>
+                    <p class="leading-[25px] md:w-[180px]">Latest Trends <br> in Jewellary Fashion</p>
+                    <p class="text-red-600">$295.00</p>
+                </div>
+
+  
+                 </div>
+                 </div>
+
+                 <div class="flex">
+
+                  
+                  <div class="flex flex-wrap md:flex-nowrap justify-around gap-[35px] mt-[35px]">
+                   <div class="shadow-xl p-[40px]">
+                       <img src="./images/ledis jacket.jpeg" alt="">
+                       <h1 class="text-[25px] text-blue-950">JACKET</h1>
+                       <p class="leading-[25px] md:w-[180px]">Men Yarn Fleece <br>Full-Zip Jacket</p>
+                       <p class="text-red-600">$245.00</p>
+                   </div>
+   
+                   <div class="shadow-xl p-[40px]">
+                       <img src="./images/hijab.jpeg" alt="">
+                       <h1 class="text-[25px] text-blue-950">HIJAB</h1>
+                       <p class="leading-[25px] md:w-[180px]">Crepe Chiffon <br>Party Wear Hijab</p>
+                       <p class="text-red-600">$120.00</p>
+                   </div>
+   
+                  </div>
+                   
+   
+                  <div class="flex flex-wrap md:flex-nowrap justify-around gap-[35px] mt-[35px]">
+                   <div class="shadow-xl p-[40px]">
+                       <img src="./images/ghori.jpeg" alt="">
+                       <h1 class="text-[25px] text-blue-950">WATCH</h1>
+                       <p class="leading-[25px] md:w-[180px]">Hand Watch <br>Leather Pouch</p>
+                       <p class="text-red-600">$130.00</p>
+                   </div>
+   
+                   <div class="shadow-xl p-[40px]">
+                       <img src="./images/curi.jpeg" alt="">
+                       <h1 class="text-[25px] text-blue-950">CURI</h1>
+                       <p class="leading-[25px] md:w-[180px]">Metal Silk <br>Thread Bangles</p>
+                       <p class="text-red-600">$105.00</p>
+                   </div>
+
+                   <div class="shadow-xl p-[40px]">
+                    <img src="./images/jacket.jpeg" alt="">
+                    <h1 class="text-[25px] text-blue-950">JACKET</h1>
+                    <p class="leading-[25px] md:w-[180px]">MEN Yarn Fleece <br> Full-Zip Jacket</p>
+                    <p class="text-red-600">$250.00</p>
+                </div>
+   
+                  </div>
+                  </div>
+
+              </div>
+                  
+              </div>
+             </section>
+
+       <!-- Description -->
+
+             <section class="md:mt-10 md:h-[500px]" >
+              
+              <div class="bg-purple-100">
+                
+                
+                <div class="gap-20 flex flex-wrap md:flex-nowrap text-center p-[80px]">
+                  <div class="text-[20px]" data-aos="fade-right">
+                    <h1 class="text-[20px] font-bold">HOW DOES IT WORK</h1>
+                   <P>Every SHOPSY artisan family owns their shop, and 
+                    you can search through all of the items or browse
+                    by each store. The platform works best for 
+                    wholesale transactions, as it allows buyers to Get
+                    the products at local prices while enjoying bulk
+                    shipping discounts
+                   </P>
+                   <br>
+                   <button class="btn bg-[#E76F51] text-[white]">LEARN MORE</button>
+                  </div>
+  
+                  <div class=" text-[20px]">
+                    <h1 class="font-bold text-[20px]">SHOP BY STORE</h1>
+                    <P> Visit each artisan shop and learn about the 
+                      different artisan groups.Each autonomous shop 
+                      belongs to the artisan communities where they 
+                      manage the inventory and consciously dictate the 
+                      price they want to change. Visit The SHOPSY Shop!
+                    </P>
+                    <br>
+                    <button class="btn bg-[#E76F51] text-[white]">GO TO STORES</button>
+                    </div>
+
+                    <div class=" text-[20px]" data-aos="fade-left">
+                      <h1 class="font-bold text-[20px]">SHOP BY CATEGORY</h1>
+                     <P>
+                      Even though SHOPSY artisans do not work in 
+                      factories or consolidate at one place, they share a 
+                      commonality in their productions. You can see all 
+                      the different types of SHOPSY bags. SHOPSY hats, 
+                      and SHOPSY apparel in the shop. Pick your 
+                      collections from different stores and pay all in one 
+                       bill. Enjoy super fast shopping!
+                     </P>
+                     <br>
+                     <button class="btn bg-[#E76F51] text-[white]">GO</button>
+                      </div>
+                   
+
+                  </div>
+              </div>
+             </section>
+
+
+             <!-- Hijab Style -->
+
+             <section class="bg-gradient-to-t to-blue-600 mt-[40px] bg-red-50">
+
+              <div>
+              <div class="flex flex-wrap md:flex-nowrap justify-center gap-28">
+
+                <div>
+                  <img src="./images/hijab 4.avif" alt="">
+                </div>
+                <div class=" p-[30px]">
+                
+                  <h1 class="text-[35px] leading-[55px] md:w-[465px] text-green-700  mt-7">Little Magnet, Big Impact</h1>
+                  <p class="md:w-[409px] leading-[35px] mt-4"> Finally, hijab magnets strong enough to actually replace pins!
+                    We fused all the funtion and security of a traditional safety pin with the convenience of an ultra-strong
+                     magnet that won't snag even the most delicate fabrics. The perfect gift for a friend-or for yourself. :)
+                    </p>
+                    <br>
+
+                    <button class="btn text-white bg-[#150805]">SHOP MAGNETS</button>
+                    
+                   </div>
+              </div>
+
+              <div class="flex flex-wrap md:flex-nowrap justify-center gap-28">
+
+                
+                <div class=" p-[30px]">
+                
+                  <h1 class="text-[35px] leading-[55px] md:w-[465px] text-green-700  mt-7">Underscarves For All</h1>
+                  <p class="md:w-[409px] leading-[35px] mt-4"> Our underscarves are made of cutting-edge textiles with
+                    built-in skincare, like anti-microbial properties and sun protection, and cater to a variety of hair
+                    types and fabric preferences.Thoughtful details contain your hair with a custom fit that feels weightless,
+                    secure ,and never stifling.Say hello to your new go-to.
+                   </p>
+                   <br>
+                   <button class="btn text-white bg-[#150805]">SHOP UNDERSCARVES</button>
+                    
+                   
+                </div>
+
+                <div>
+                  <img src="./images/hijab 2.jpg" alt="">
+                </div>
+              </div>
+
+
+              </div>
+
+             </section>
+
+             <!-- Have Question -->
+
+
+             
+    <section class="mt-[30px] bg-purple-200">
+      <div class="flex flex-wrap md:flex-nowrap justify-center md:gap-3">
+        <h1 class="text-[45px] font-bold">Have Qoestions?</h1>
+        <h1 class="text-[45px] text-orange-600 font-bold">We'd love to hear From you</h1>
+      </div>
+      <div class="flex flex-wrap md:flex-nowrap justify-center gap-24 mt-14">
+          <div>
+          <img src="./images/Group.png" class="md:h-[300px] md:w-[300px]" alt="">
+        </div>
+      
+         
+        <div class="join join-vertical md:w-[700px] md:h-[400px]">
+          <div>
+
+            <div class="flex flex-wrap md:flex-nowrap gap-5 md:mt-10 text-center">
+              <div class="form-control">
+               <input type="text" placeholder="Name" class="input input-bordered w-24 md:w-[350px] " />
+             </div>
+ 
+             <div class="form-control">
+               <input type="text" placeholder="Email *" class="input input-bordered w-24 md:w-[350px] " />
+             </div>
+                 </div>
+ 
+                 <div class="form-control mt-10">
+                   <input type="text" placeholder="Phone number" class="input input-bordered w-24 md:w-[720px]" />
+                 </div>
+ 
+                 <div class="form-control md:mt-10 md:h-[800px]">
+                   <input type="text" placeholder="What's on your mind?" class="input input-bordered w-24 md:w-[720px] md:h[400px]" />
+                 </div>
+          </div>
+        
+
+         
+
+         
+         </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+             <!-- footer part -->
+
+             <section class="bg-black text-neutral-content mt-4 p-12 justify-center" >
+              <div class="flex flex-wrap md:flex-nowrap mt-10 justify-start gap-[50px] mr-20">
+                <div class="gap-40 flex flex-wrap md:flex-nowrap"  data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                <div>
+                  <div class="md:h-[100px] md:w-[100px]">
+                   <img src="./images/logo.png" alt="">
+                  </div>
+        
+                  <div class="flex flex-wrap md:flex-nowrap mt-5 text-[17px] gap-10">
+                    <p>Lorem ipsum dolor sit amet consectetur.
+                       Lorem <br> ipsum dolor sit amet consectetur adipisicing elit. <br>
+                      Possimus,voluplate.</p>
+                    
+                    </div>
+                </div>
+                <div class="gap-20 flex flex-wrap md:flex-nowrap">
+                <div class="">
+                  <h1 class="font-bold">Important Links</h1>
+                  <p>Home</p>
+                  <p>About</p>
+                  <p>Contact</p>
+                  <p>Blog</p>
+                </div>
+
+                <div class=" text-[20px]">
+                  <h1 class="font-bold text-[20px]">Links</h1>
+                  <p>Home</p>
+                  <p>About</p>
+                  <p>Contact</p>
+                  <p>Blog</p>
+                  </div>
+                  <div>
+                <div class=" gap-20">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h1> <i class="fa fa-location-arrow" aria-hidden="true"></i>Noida, Uttar Pradesh</h1>
+                </div>
+                <div>
+                  <h1> <i class="fa fa-mobile" aria-hidden="true"></i>+91 123456789</h1>
+                </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </section>
+
+             
+    
+
+
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            
+            
+            <script>
+              AOS.init();
+            </script>
+             
+
+    
+  
+       
+</body>
+</html>
